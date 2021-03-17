@@ -52,6 +52,10 @@
   :config
   (visual-line-mode t)
   :hook markdown-mode)
+(use-package focus
+  :ensure t
+  :config
+  (add-to-list 'focus-mode-to-thing '(text-mode . paragraph)))
 (use-package org
   :config
   (setq org-startup-indented t))
@@ -59,11 +63,13 @@
   :ensure t
   :config
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+(use-package magit
+  :ensure t)
 
-(set-face-attribute 'default nil :family "Triplicate T3c" :slant 'normal :weight 'normal :height 170 :width 'normal)
+(set-face-attribute 'default nil :family "Triplicate T3c" :slant 'normal :weight 'normal :height 200 :width 'normal)
 (toggle-frame-fullscreen)
 (setq-default line-spacing 8)
-(setq scroll-margin 4)
+(setq scroll-margin 16)
 (fringe-mode 20)
 (global-hl-line-mode t)
 (global-visual-line-mode t)
