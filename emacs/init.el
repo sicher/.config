@@ -43,6 +43,7 @@
   (ivy-mode t))
 (use-package ivy-prescient
   :ensure t
+  :after (counsel)
   :config
   (ivy-prescient-mode t))
 (use-package swiper
@@ -53,8 +54,7 @@
   :config
   (global-undo-tree-mode t))
 (use-package markdown-mode
-  :ensure t
-  :after (writeroom-mode))
+  :ensure t)
 (use-package writeroom-mode
   :ensure t
   :config
@@ -63,16 +63,21 @@
 (use-package focus
   :ensure t
   :config
-  (add-to-list 'focus-mode-to-thing '(text-mode . paragraph)))
+  (add-to-list 'focus-mode-to-thing '(text-mode . paragraph))
+  :hook (markdown-mode . focus-mode))
 (use-package org
   :config
   (setq org-startup-indented t))
 (use-package org-bullets
   :ensure t
   :config
-  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode t))))
 (use-package magit
   :ensure t)
+(use-package deft
+  :ensure t
+  :config
+  (setq deft-directory "~/Documents/noteringar/"))
 
 (set-face-attribute 'default nil :family "Triplicate T3c" :slant 'normal :weight 'normal :height 200 :width 'normal)
 (toggle-frame-fullscreen)
