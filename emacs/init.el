@@ -3,7 +3,11 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
 ;; Packages
-  
+
+(use-package exec-path-from-shell
+  :ensure t
+  :config
+  (exec-path-from-shell-initialize))
 (use-package solarized-theme
   :ensure t
   :config
@@ -28,15 +32,19 @@
   :ensure t
   :config
   (global-evil-fringe-mark-mode t))
+(use-package counsel
+  :ensure t
+  :config
+  (counsel-mode t))
 (use-package ivy
   :ensure t
   :config
   (setq ivy-use-virtual-buffers t)
   (ivy-mode t))
-(use-package counsel
+(use-package ivy-prescient
   :ensure t
   :config
-  (counsel-mode t))
+  (ivy-prescient-mode t))
 (use-package swiper
   :ensure t
   :bind ("C-s" . swiper-isearch))
@@ -69,7 +77,7 @@
 (set-face-attribute 'default nil :family "Triplicate T3c" :slant 'normal :weight 'normal :height 200 :width 'normal)
 (toggle-frame-fullscreen)
 (setq-default line-spacing 8)
-(setq scroll-margin 16)
+(setq scroll-margin 12)
 (fringe-mode 20)
 (global-hl-line-mode t)
 (global-visual-line-mode t)
