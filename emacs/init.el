@@ -26,6 +26,7 @@
   (evil-define-key 'normal 'global (kbd "<leader>f") 'counsel-fzf)
   (evil-define-key 'normal 'global (kbd "<leader>b") 'counsel-switch-buffer)
   (evil-define-key 'normal 'global (kbd "<leader>u") 'undo-tree-visualize)
+  (evil-define-key 'normal 'global (kbd "<leader>d") 'deft)
   (evil-define-key 'normal 'global (kbd "<home>") 'evil-beginning-of-visual-line)
   (evil-define-key 'normal 'global (kbd "<end>") 'evil-end-of-visual-line))
 (use-package evil-fringe-mark
@@ -49,6 +50,8 @@
 (use-package swiper
   :ensure t
   :bind ("C-s" . swiper-isearch))
+(use-package company
+  :ensure t)
 (use-package undo-tree
   :ensure t
   :config
@@ -77,7 +80,10 @@
 (use-package deft
   :ensure t
   :config
-  (setq deft-directory "~/Documents/noteringar/"))
+  (setq deft-directory "~/Documents/noteringar/")
+  (setq deft-default-extension "md")
+  (setq deft-recursive t)
+  (setq deft-use-filter-string-for-filename t))
 
 (set-face-attribute 'default nil :family "Triplicate T3c" :slant 'normal :weight 'normal :height 200 :width 'normal)
 (toggle-frame-fullscreen)
@@ -103,3 +109,10 @@
 (setq auto-revert-check-vc-info t)
 (when (eq system-type 'darwin)
   (setq mac-right-option-modifier 'none))
+
+(defun wordreport ()
+  "Report the number of added and deleted words in the git diff against head."
+  (interactive)
+  (setq added-words (string-to-number (shell-command-to-string "git diff --word-diff=porcelain | grep '^+' | sed 's/^+//' | tail -n +2 | wc -w")))
+  (setq deleted-words (string-to-number (shell-command-to-string "git diff --word-diff=porcelain | grep '^-' | sed 's/^-//' | tail -n +2 | wc -w")))
+  (message "Added %d words. Deleted %d words." added-words deleted-words))
