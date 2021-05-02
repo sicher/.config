@@ -61,7 +61,6 @@
 (use-package writeroom-mode
   :ensure t
   :config
-  (visual-line-mode t)
   (setq writeroom-width 72)
   :hook markdown-mode)
 (use-package focus
@@ -92,9 +91,10 @@
 (toggle-frame-fullscreen)
 (setq-default line-spacing 8)
 (setq scroll-margin 12)
-(fringe-mode 12)
+(fringe-mode 20)
 (global-hl-line-mode t)
 (global-visual-line-mode t)
+(global-so-long-mode t)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
