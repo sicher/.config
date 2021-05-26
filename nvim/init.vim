@@ -29,8 +29,8 @@ endif
 set background=light
 colorscheme pencil
 
-command! -bang -nargs=* BLinesNosort
-    \ call fzf#vim#buffer_lines(<q-args>, {'options': ['--no-sort']}, <bang>0)
+command! -bang -nargs=* BLinesNosort 
+        \ call fzf#vim#buffer_lines(<q-args>, {'options': ['--no-sort']}, <bang>0)
 
 let mapleader=","
 map <Leader>f :Files<CR>
@@ -53,19 +53,6 @@ augroup pencil
 augroup END
 
 let g:vim_markdown_folding_disabled = 1
-  
-" LUA conf
-lua << EOF
-    require("zen-mode").setup {
-        window = {
-            width = 60,
-            height = 0.8
-        }
-    }
-EOF
-
-" Customize fzf colors to match your color scheme                                          
-" - fzf#wrap translates this to a set of `--color` options                                 
 let g:fzf_colors =
             \ { 'fg':      ['fg', 'Normal'],
             \ 'bg':      ['bg', 'Normal'],
@@ -81,3 +68,21 @@ let g:fzf_colors =
             \ 'spinner': ['fg', 'Label'],
             \ 'header':  ['fg', 'Comment'] }
 
+
+command! -bang -nargs=* WordReport call WordReport() 
+function! WordReport()
+    let ca = "git diff --word-diff=porcelain | grep '^+' | sed 's/^+//' | tail -n +2 | wc -w"
+    let cd = "git diff --word-diff=porcelain | grep '^-' | sed 's/^-//' | tail -n +2 | wc -w"
+    let added = trim(system(ca))
+    let deleted = trim(system(cd))
+    echo "Added " . added . " words. Deleted " . deleted . " words."
+endfunction
+
+lua << EOF
+    require("zen-mode").setup {
+        window = {
+            width = 60,
+            height = 0.8
+        }
+    }
+EOF
