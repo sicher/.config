@@ -7,9 +7,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'mbbill/undotree'
 Plug 'folke/zen-mode.nvim'
 Plug 'kshenoy/vim-signature'
-Plug 'romainl/flattened'
-Plug 'overcache/NeoSolarized'
-Plug 'preservim/vim-colors-pencil'
 Plug 'https://github.com/alok/notational-fzf-vim'
 call plug#end()
 
@@ -24,8 +21,8 @@ set hlsearch
 set whichwrap+=<,>,h,l,[,]
 set signcolumn=yes
 set updatetime=1000
-set termguicolors
-colorscheme pencil
+"set termguicolors
+colorscheme LittleComputerPeople
 
 command! -bang -nargs=* BLinesNosort 
         \ call fzf#vim#buffer_lines(<q-args>, {'options': ['--no-sort']}, <bang>0)
@@ -69,7 +66,6 @@ let g:fzf_colors =
             \ 'spinner': ['fg', 'Label'],
             \ 'header':  ['fg', 'Comment'] }
 
-
 command! -bang -nargs=* WordReport call WordReport() 
 command! -bang -nargs=* WrapOn call WrapOn() 
 command! -bang -nargs=* WrapOff call WrapOff() 
@@ -100,6 +96,7 @@ function WrapOff()
     silent! iunmap <buffer> <Home>
     silent! iunmap <buffer> <End>
 endfunction
+
 
 function! WordReport()
     let ca = "git diff --word-diff=porcelain | grep '^+' | sed 's/^+//' | tail -n +2 | wc -w"
