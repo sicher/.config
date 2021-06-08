@@ -21,7 +21,7 @@ set hlsearch
 set whichwrap+=<,>,h,l,[,]
 set signcolumn=yes
 set updatetime=1000
-"set termguicolors
+set termguicolors
 colorscheme LittleComputerPeople
 
 command! -bang -nargs=* BLinesNosort 
@@ -51,20 +51,6 @@ augroup wrapping
 augroup END
 
 let g:vim_markdown_folding_disabled = 1
-let g:fzf_colors =
-            \ { 'fg':      ['fg', 'Normal'],
-            \ 'bg':      ['bg', 'Normal'],
-            \ 'hl':      ['fg', 'CursorLine'],
-            \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-            \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-            \ 'hl+':     ['fg', 'Statement'],
-            \ 'info':    ['fg', 'PreProc'],
-            \ 'border':  ['fg', 'Normal'],
-            \ 'prompt':  ['fg', 'Conditional'],
-            \ 'pointer': ['fg', 'Exception'],
-            \ 'marker':  ['fg', 'Keyword'],
-            \ 'spinner': ['fg', 'Label'],
-            \ 'header':  ['fg', 'Comment'] }
 
 command! -bang -nargs=* WordReport call WordReport() 
 command! -bang -nargs=* WrapOn call WrapOn() 
