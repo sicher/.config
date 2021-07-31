@@ -60,6 +60,9 @@ function WrapOn()
     echo "Wrap ON"
     setlocal wrap linebreak nolist
     setlocal display+=lastline
+    set breakat&vim
+    set breakat-=?
+    set breakat-=!
     noremap  <buffer> <silent> <Up>   gk
     noremap  <buffer> <silent> <Down> gj
     noremap  <buffer> <silent> <Home> g<Home>
