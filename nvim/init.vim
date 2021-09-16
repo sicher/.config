@@ -86,7 +86,6 @@ function WrapOff()
     silent! iunmap <buffer> <End>
 endfunction
 
-
 function! WordReport()
     let ca = "git diff --word-diff=porcelain | grep '^+' | sed 's/^+//' | tail -n +2 | wc -w"
     let cd = "git diff --word-diff=porcelain | grep '^-' | sed 's/^-//' | tail -n +2 | wc -w"
@@ -98,7 +97,7 @@ endfunction
 lua << EOF
     require("zen-mode").setup {
         window = {
-            width = 60,
+            width = 65,
             height = 0.8
         }
     }
