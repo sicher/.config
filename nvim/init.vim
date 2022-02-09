@@ -20,7 +20,7 @@ set expandtab
 set hlsearch
 set whichwrap+=<,>,h,l,[,]
 set signcolumn=yes
-set updatetime=1000
+set updatetime=200
 set termguicolors
 colorscheme LittleComputerPeople
 
@@ -63,6 +63,7 @@ function WrapOn()
     set breakat&vim
     set breakat-=?
     set breakat-=!
+    set breakat-=.
     noremap  <buffer> <silent> <Up>   gk
     noremap  <buffer> <silent> <Down> gj
     noremap  <buffer> <silent> <Home> g<Home>
