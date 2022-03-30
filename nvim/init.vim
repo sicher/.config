@@ -1,6 +1,7 @@
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'ibhagwan/fzf-lua', { 'branch': 'main' } 
 Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -30,10 +31,9 @@ command! -bang -nargs=* BLinesNosort
 let g:nv_search_paths = ['~/Documents/notes', './doc', './notes']
 
 let mapleader=","
-map <Leader>f :Files<CR>
-map <Leader>b :Buffers<CR>
-map <Leader>s :BLinesNosort<CR>
-map <Leader>r :Rg<CR>
+map <Leader>f :FzfLua files<CR>
+map <Leader>b :FzfLua buffers<CR>
+map <Leader>s :FzfLua lgrep_curbuf<CR>
 map <Leader>u :UndotreeToggle<CR>
 map <Leader>z :Zen<CR>
 map <Leader>n :NV<CR>
