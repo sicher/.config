@@ -8,6 +8,8 @@ Plug 'mbbill/undotree'
 Plug 'folke/zen-mode.nvim'
 Plug 'kshenoy/vim-signature'
 Plug 'https://github.com/alok/notational-fzf-vim'
+Plug 'alisdair/vim-armasm'
+Plug 'ziglang/zig.vim'
 call plug#end()
 
 set ignorecase
@@ -21,7 +23,7 @@ set hlsearch
 set whichwrap+=<,>,h,l,[,]
 set signcolumn=yes
 set updatetime=1000
-set termguicolors
+" set termguicolors
 colorscheme LittleComputerPeople
 
 command! -bang -nargs=* BLinesNosort 
@@ -37,6 +39,9 @@ map <Leader>r :Rg<CR>
 map <Leader>u :UndotreeToggle<CR>
 map <Leader>z :Zen<CR>
 map <Leader>n :NV<CR>
+
+let asmsyntax='armasm'
+let filetype_inc='armasm'
 
 set wildcharm=<C-Z>
 cnoremap <expr> <up> wildmenumode() ? "\<left>" : "\<up>"
