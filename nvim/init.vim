@@ -1,6 +1,7 @@
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'ibhagwan/fzf-lua', { 'branch': 'main' } 
 Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -23,7 +24,7 @@ set hlsearch
 set whichwrap+=<,>,h,l,[,]
 set signcolumn=yes
 set updatetime=1000
-" set termguicolors
+set termguicolors
 colorscheme LittleComputerPeople
 
 command! -bang -nargs=* BLinesNosort 
@@ -32,10 +33,9 @@ command! -bang -nargs=* BLinesNosort
 let g:nv_search_paths = ['~/Documents/notes', './doc', './notes']
 
 let mapleader=","
-map <Leader>f :Files<CR>
-map <Leader>b :Buffers<CR>
-map <Leader>s :BLinesNosort<CR>
-map <Leader>r :Rg<CR>
+map <Leader>f :FzfLua files<CR>
+map <Leader>b :FzfLua buffers<CR>
+map <Leader>s :FzfLua lgrep_curbuf<CR>
 map <Leader>u :UndotreeToggle<CR>
 map <Leader>z :Zen<CR>
 map <Leader>n :NV<CR>
@@ -65,6 +65,10 @@ function WrapOn()
     echo "Wrap ON"
     setlocal wrap linebreak nolist
     setlocal display+=lastline
+    set breakat&vim
+    set breakat-=?
+    set breakat-=!
+    set breakat-=.
     noremap  <buffer> <silent> <Up>   gk
     noremap  <buffer> <silent> <Down> gj
     noremap  <buffer> <silent> <Home> g<Home>
@@ -88,7 +92,6 @@ function WrapOff()
     silent! iunmap <buffer> <End>
 endfunction
 
-
 function! WordReport()
     let ca = "git diff --word-diff=porcelain | grep '^+' | sed 's/^+//' | tail -n +2 | wc -w"
     let cd = "git diff --word-diff=porcelain | grep '^-' | sed 's/^-//' | tail -n +2 | wc -w"
@@ -100,7 +103,7 @@ endfunction
 lua << EOF
     require("zen-mode").setup {
         window = {
-            width = 60,
+            width = 65,
             height = 0.8
         }
     }

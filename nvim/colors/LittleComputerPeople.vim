@@ -7,8 +7,8 @@ endif
 let g:colors_name = "LittleComputerPeople"
 
 let s:palette = {
-      \ 'fg'   : [  "black", '#424242'],
-      \ 'bg'   : [  "white", '#faf4f4'],
+      \ 'fg'   : [  "black", '#4a4232'],
+      \ 'bg'   : [  "white", '#fdf6e4'],
       \ 'mark' : [  "red", '#f44336'],
       \ }
 
@@ -51,8 +51,8 @@ call s:Define('SpecialKey',	'mark',	'bg',	'NONE')
 call s:Define('Folded',		'fg',	'bg',	'inverse')
 call s:Define('Title',		'fg',	'bg',	'bold')
 call s:Define('Underlined',	'fg',	'bg',	'underline')
-call s:Define('Pmenu	',	'mark',	'bg',	'inverse')
-call s:Define('PmenuSel',	'fg',	'bg',	'inverse')
+call s:Define('Pmenu	',	'fg',	'bg',	'inverse')
+call s:Define('PmenuSel',	'mark',	'bg',	'inverse')
 call s:Define('PmenuThumb',	'mark',	'bg',	'inverse')
 call s:Define('MatchParen',	'fg',	'bg',	'bold')
 call s:Define('DiffAdd',	'mark',	'bg',	'NONE')
