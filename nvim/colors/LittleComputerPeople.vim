@@ -8,7 +8,7 @@ let g:colors_name = "LittleComputerPeople"
 
 let s:palette = {
       \ 'fg'   : [  "black", '#4a4232'],
-      \ 'bg'   : [  "white", '#fdf6e4'],
+      \ 'bg'   : [  "white", '#faf8e8'],
       \ 'mark' : [  "red", '#f44336'],
       \ }
 

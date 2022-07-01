@@ -103,7 +103,7 @@ endfunction
 lua << EOF
     require("zen-mode").setup {
         window = {
-            width = 65,
+            width = 85,
             height = 0.8
         }
     }
