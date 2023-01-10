@@ -1,0 +1,48 @@
+# Little Computer People color theme for Helix
+# by Mikael Säker.
+
+"ui.background" = { bg = "background" }
+"ui.text" = "foreground"
+"ui.text.info" = "background"
+"ui.statusline" = "darkblue"
+"ui.cursor" = { fg = "foreground", bg = "lightblue" }
+"ui.cursor.match" = { bg = "lightblue" }
+"ui.cursor.primary" = { fg = "foreground", bg = "blue" }
+"ui.selection" = { bg = "lightblue" }
+"ui.menu" = { fg = "background", bg = "darkblue" }
+"ui.popup" = { fg = "background", bg = "darkblue" }
+"ui.help" = { fg = "background", bg = "darkblue" }
+"ui.linenr" = "grey"
+"ui.linenr.selected" = "darkgrey"
+
+"warning" = "yellow"
+"error" = "red"
+"info" = { fg = "blue", modifiers = ["bold"] }
+"hint" = { fg = "blue", modifiers = ["bold"] }
+
+"diagnostic.hint" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.info" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "orange", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+
+"comment" = { fg = "red", modifiers = ["italic"] }
+"string" = { modifiers = ["italic"] }
+"keyword" = { modifiers = ["bold"] }
+"markup.heading" = { modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "red", modifiers = ["bold"] }
+"diff.plus" = { fg = "green" }
+"diff.delta" = { fg = "blue" }
+"diff.minus" = { fg = "red" }
+
+[palette]
+foreground = "#424242"
+background = "#f5f6f6"
+grey = "#d5d5d7"
+darkgrey = "#959598"
+red = "#f2291a"
+blue = "#20bbfc"
+lightblue = "#a6e4fe"
+darkblue = "#105e7e"
+green = "#86b300"
+orange = "#E67E25"
+yellow = "#F0C418"
