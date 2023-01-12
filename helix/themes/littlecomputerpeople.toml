@@ -35,8 +35,8 @@
 "diff.minus" = { fg = "red" }
 
 [palette]
-foreground = "#424242"
-background = "#f5f6f6"
+foreground = "#1a1a1a"
+background = "#f7f7f7"
 grey = "#d5d5d7"
 darkgrey = "#959598"
 red = "#f2291a"
