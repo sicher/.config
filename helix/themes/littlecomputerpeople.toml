@@ -3,20 +3,22 @@
 
 "ui.background" = { bg = "background" }
 "ui.text" = "foreground"
-"ui.text.info" = "background"
+"ui.text.info" = "foreground"
 "ui.statusline" = "darkblue"
 "ui.cursor" = { fg = "foreground", bg = "lightblue" }
 "ui.cursor.match" = { bg = "lightblue" }
 "ui.cursor.primary" = { fg = "foreground", bg = "blue" }
 "ui.selection" = { bg = "lightblue" }
-"ui.menu" = { fg = "background", bg = "darkblue" }
-"ui.popup" = { fg = "background", bg = "darkblue" }
+"ui.menu" = { fg = "foreground", bg = "sand" }
+"ui.menu.selected" = { fg = "background", bg = "darkblue" }
+"ui.popup" = { fg = "foreground", bg = "sand" }
 "ui.help" = { fg = "background", bg = "darkblue" }
 "ui.linenr" = "grey"
 "ui.linenr.selected" = "darkgrey"
+"ui.window" = { fg = "darkblue" }
 
 "warning" = "yellow"
-"error" = "red"
+"error" = { fg = "red" }
 "info" = { fg = "blue", modifiers = ["bold"] }
 "hint" = { fg = "blue", modifiers = ["bold"] }
 
@@ -30,6 +32,8 @@
 "keyword" = { modifiers = ["bold"] }
 "markup.heading" = { modifiers = ["bold"] }
 "markup.heading.marker" = { fg = "red", modifiers = ["bold"] }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
 "diff.plus" = { fg = "green" }
 "diff.delta" = { fg = "blue" }
 "diff.minus" = { fg = "red" }
@@ -37,8 +41,9 @@
 [palette]
 foreground = "#424242"
 background = "#f5f6f6"
-grey = "#d5d5d7"
-darkgrey = "#959598"
+sand = "#e0e0d8"
+grey = "#d5d5d5"
+darkgrey = "#858585"
 red = "#f2291a"
 blue = "#20bbfc"
 lightblue = "#a6e4fe"
