@@ -38,16 +38,17 @@
 "diff.delta" = { fg = "blue" }
 "diff.minus" = { fg = "red" }
 
+
 [palette]
 foreground = "#1a1a1a"
 background = "#f7f7f7"
 grey = "#d5d5d7"
 darkgrey = "#959598"
 sand = "#e0e0d8"
-red = "#f2291a"
+red = "#f02020"
 blue = "#20bbfc"
 lightblue = "#a6e4fe"
 darkblue = "#105e7e"
-green = "#86b300"
+green = "#20bb20"
 orange = "#E67E25"
 yellow = "#F0C418"

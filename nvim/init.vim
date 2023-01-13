@@ -25,6 +25,7 @@ set whichwrap+=<,>,h,l,[,]
 set signcolumn=yes
 set updatetime=1000
 set termguicolors
+set clipboard+=unnamedplus
 colorscheme LittleComputerPeople
 
 command! -bang -nargs=* BLinesNosort 
@@ -36,6 +37,7 @@ let mapleader=","
 map <Leader>f :FzfLua files<CR>
 map <Leader>b :FzfLua buffers<CR>
 map <Leader>s :FzfLua lgrep_curbuf<CR>
+map <Leader>o :FzfLua oldfiles<CR>
 map <Leader>u :UndotreeToggle<CR>
 map <Leader>z :Zen<CR>
 map <Leader>n :NV<CR>
@@ -48,6 +50,7 @@ cnoremap <expr> <up> wildmenumode() ? "\<left>" : "\<up>"
 cnoremap <expr> <down> wildmenumode() ? "\<right>" : "\<down>"
 cnoremap <expr> <left> wildmenumode() ? "\<up>" : "\<left>"
 cnoremap <expr> <right> wildmenumode() ? " \<bs>\<C-Z>" : "\<right>"
+inoremap <M-BS> <C-w>
 
 augroup wrapping
   autocmd!
