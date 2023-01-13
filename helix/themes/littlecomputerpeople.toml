@@ -3,19 +3,22 @@
 
 "ui.background" = { bg = "background" }
 "ui.text" = "foreground"
-"ui.text.info" = "foreground"
+"ui.text.info" = "background"
+"ui.text.focus" = { bg = "darkblue", fg = "background" }
 "ui.statusline" = "darkblue"
 "ui.cursor" = { fg = "foreground", bg = "lightblue" }
 "ui.cursor.match" = { bg = "lightblue" }
 "ui.cursor.primary" = { fg = "foreground", bg = "blue" }
-"ui.selection" = { bg = "lightblue" }
-"ui.menu" = { fg = "foreground", bg = "sand" }
+"ui.selection" = { bg = "blue" }
+"ui.selection.primary" = { bg = "lightblue" }
+"ui.menu" = { fg = "foreground", bg = "grey" }
 "ui.menu.selected" = { fg = "background", bg = "darkblue" }
-"ui.popup" = { fg = "foreground", bg = "sand" }
+"ui.popup" = { fg = "background", bg = "grey" }
+"ui.popup.info" = { fg = "background", bg = "darkblue" }
 "ui.help" = { fg = "background", bg = "darkblue" }
 "ui.linenr" = "grey"
 "ui.linenr.selected" = "darkgrey"
-"ui.window" = { fg = "darkblue" }
+"ui.highlight" = { fg = "red", bg = "blue"}
 
 "warning" = "yellow"
 "error" = { fg = "red" }
@@ -42,9 +45,8 @@
 [palette]
 foreground = "#1a1a1a"
 background = "#f7f7f7"
-grey = "#d5d5d7"
-darkgrey = "#959598"
-sand = "#e0e0d8"
+grey = "#d5d5d5"
+darkgrey = "#858585"
 red = "#f02020"
 blue = "#20bbfc"
 lightblue = "#a6e4fe"
