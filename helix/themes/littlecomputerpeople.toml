@@ -20,6 +20,7 @@
 "ui.linenr.selected" = "darkgrey"
 "ui.highlight" = { fg = "red", bg = "blue"}
 
+"special" = "darkblue"
 "warning" = "yellow"
 "error" = { fg = "red" }
 "info" = { fg = "blue", modifiers = ["bold"] }
