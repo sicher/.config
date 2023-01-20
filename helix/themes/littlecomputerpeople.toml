@@ -5,7 +5,8 @@
 "ui.text" = "foreground"
 "ui.text.info" = "background"
 "ui.text.focus" = { bg = "darkblue", fg = "background" }
-"ui.statusline" = "darkblue"
+"ui.statusline" = { fg = "darkblue", bg = "lightgrey" }
+"ui.window" = "darkblue"
 "ui.cursor" = { fg = "foreground", bg = "lightblue" }
 "ui.cursor.match" = { bg = "lightblue" }
 "ui.cursor.primary" = { fg = "foreground", bg = "blue" }
