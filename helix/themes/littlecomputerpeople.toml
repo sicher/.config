@@ -46,7 +46,7 @@
 foreground = "#1a1a1a"
 background = "#f7f7f7"
 lightgrey = "#e0e0e0"
-grey = "#c9c9c9"
+grey = "#c5c5c5"
 darkgrey = "#757575"
 red = "#f02020"
 blue = "#20bbfc"
@@ -55,3 +55,4 @@ darkblue = "#105e7e"
 green = "#20bb20"
 orange = "#E67E25"
 yellow = "#F0C418"
+# end
