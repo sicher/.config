@@ -21,9 +21,9 @@
 "ui.linenr.selected" = "darkgrey"
 "ui.highlight" = { fg = "red", bg = "blue"}
 
-"special" = "orange"
-"warning" = "yellow"
-"error" = { fg = "red" }
+"special" = { fg = "orange", modifiers = ["bold"] }
+"warning" = { fg = "yellow", modifiers = ["bold"] }
+"error" = { fg = "red", modifiers = ["bold"] }
 "info" = { fg = "blue", modifiers = ["bold"] }
 "hint" = { fg = "blue", modifiers = ["bold"] }
 
@@ -34,7 +34,11 @@
 
 "comment" = { fg = "red", modifiers = ["italic"] }
 "string" = { modifiers = ["italic"] }
+"constant" = { modifiers = [] }
 "keyword" = { modifiers = ["bold"] }
+"function" = { modifiers = ["italic"] }
+"type" = { modifiers = ["italic"] }
+
 "markup.heading" = { modifiers = ["bold"] }
 "markup.heading.marker" = { fg = "red", modifiers = ["bold"] }
 "markup.bold" = { modifiers = ["bold"] }
