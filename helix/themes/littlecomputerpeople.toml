@@ -20,6 +20,7 @@
 "ui.linenr" = "grey"
 "ui.linenr.selected" = "darkgrey"
 "ui.highlight" = { fg = "red", bg = "blue"}
+"ui.virtual.ruler" = { bg = "lightblue" }
 
 "special" = { fg = "orange", modifiers = ["bold"] }
 "warning" = { fg = "yellow", modifiers = ["bold"] }
