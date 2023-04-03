@@ -1,4 +1,7 @@
 # Little Computer People color theme for Helix
+#
+# Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text.  Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text.
+#
 # by Mikael Säker.
 
 "ui.background" = { bg = "background" }
@@ -9,6 +12,7 @@
 "ui.statusline.normal" = "darkblue"
 "ui.statusline.insert" = "red"
 "ui.statusline.select" = "orange"
+"ui.virtual" = "lightgrey"
 "ui.window" = "darkblue"
 "ui.cursor" = { fg = "foreground", bg = "lightblue" }
 "ui.cursor.match" = { bg = "lightblue" }
@@ -20,7 +24,7 @@
 "ui.popup" = { fg = "background", bg = "grey" }
 "ui.popup.info" = { fg = "background", bg = "darkblue" }
 "ui.help" = { fg = "background", bg = "darkblue" }
-"ui.linenr" = "grey"
+"ui.linenr" = "lightgrey"
 "ui.linenr.selected" = "darkgrey"
 "ui.highlight" = { fg = "red", bg = "blue"}
 "ui.virtual.ruler" = { bg = "lightblue" }
