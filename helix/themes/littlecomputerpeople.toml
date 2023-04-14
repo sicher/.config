@@ -51,8 +51,8 @@
 "markup.heading.marker" = { fg = "red", modifiers = ["bold"] }
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic"] }
-"diff.plus" = { fg = "green" }
-"diff.delta" = { fg = "blue" }
+"diff.plus" = { fg = "lightgreen" }
+"diff.delta" = { fg = "lightblue" }
 "diff.minus" = { fg = "red" }
 
 [palette]
@@ -66,6 +66,7 @@ blue = "#20bbfc"
 lightblue = "#a6e4fe"
 darkblue = "#105e7e"
 green = "#20bb20"
+lightgreen = "#8FDD8f"
 orange = "#E67E25"
 yellow = "#F0C418"
 # end
