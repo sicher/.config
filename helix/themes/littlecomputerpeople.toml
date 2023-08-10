@@ -14,9 +14,10 @@
 "ui.statusline.select" = "orange"
 "ui.virtual" = "lightgrey"
 "ui.window" = "darkblue"
-"ui.cursor" = { fg = "foreground", bg = "lightblue" }
-"ui.cursor.match" = { bg = "lightblue" }
+"ui.cursor" = { bg = "lightblue" }
 "ui.cursor.primary" = { fg = "foreground", bg = "blue" }
+"ui.cursor.insert" = { bg = "darkblue" }
+"ui.cursor.match" = { bg = "lightblue" }
 "ui.selection" = { bg = "lightgrey" }
 "ui.selection.primary" = { bg = "grey" }
 "ui.menu" = { fg = "foreground", bg = "lightgrey" }
@@ -32,8 +33,8 @@
 "special" = { fg = "orange", modifiers = ["bold"] }
 "warning" = { fg = "yellow", modifiers = ["bold"] }
 "error" = { fg = "red", modifiers = ["bold"] }
-"info" = { fg = "blue", modifiers = ["bold"] }
-"hint" = { fg = "blue", modifiers = ["bold"] }
+"info" = { fg = "yellow", modifiers = ["bold"] }
+"hint" = { fg = "yellow", modifiers = ["bold"] }
 
 "diagnostic.hint" = { underline = { color = "blue", style = "curl" } }
 "diagnostic.info" = { underline = { color = "yellow", style = "curl" } }
@@ -44,7 +45,6 @@
 "string" = { modifiers = ["italic"] }
 "constant" = { modifiers = [] }
 "keyword" = { modifiers = ["bold"] }
-"function" = { modifiers = ["italic"] }
 "type" = { modifiers = ["italic"] }
 
 "markup.heading" = { modifiers = ["bold"] }
@@ -58,9 +58,11 @@
 [palette]
 foreground = "#1a1a1a"
 background = "#f7f7f7"
-lightgrey = "#e0e0e0"
-grey = "#c5c5c5"
+lightgrey = "#e5e5e5"
+grey = "#d5d5d5"
 darkgrey = "#757575"
+lightbeige = "#e0e0d0"
+beige = "#d0d0c0"
 red = "#f02020"
 blue = "#20bbfc"
 lightblue = "#a6e4fe"
