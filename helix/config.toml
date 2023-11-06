@@ -2,6 +2,7 @@ theme = "littlecomputerpeople"
 
 [editor]
 color-modes = true
+gutters = ["diff", "spacer", "diagnostics", "line-numbers", "spacer"] 
 
 [editor.cursor-shape]
 normal = "block"
@@ -9,5 +10,4 @@ insert = "bar"
 select = "underline"
 
 [keys.normal.space]
-Z = ":set gutters.line-numbers.min-width 3"
-z = ":set gutters.line-numbers.min-width 31"
+z = ":toggle gutters.line-numbers.min-width 3 31"
