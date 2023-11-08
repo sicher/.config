@@ -10,7 +10,7 @@
 "ui.statusline.insert" = { fg = "white", bg = "blue" } 
 "ui.statusline.select" = { fg = "black", bg = "yellow" }
 "ui.virtual" = "light-gray"
-"ui.window" = { fg = "gray" }
+"ui.window" = "gray"
 "ui.cursor" = { bg = "light-blue" }
 "ui.cursor.primary" = { bg = "blue" }
 "ui.cursor.insert" = { bg = "blue" }
@@ -40,22 +40,21 @@
 
 "comment" = { fg = "red", modifiers = ["italic"] }
 "string" = { modifiers = ["italic"] }
-"constant" = { modifiers = [] }
 "keyword" = { modifiers = ["bold"] }
 "type" = { modifiers = ["italic"] }
-"tag" = { fg = "red" }
+"tag" = "red"
 
 "markup.heading" = { fg = "black", modifiers = ["bold"] }
 "markup.heading.marker" = { fg = "red", modifiers = ["bold"] }
-"markup.list" = { fg = "red" }
-"markup.link" = { fg = "dark-blue" }
+"markup.list" = "red"
+"markup.link" = "dark-blue"
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic"] }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
 
-"diff.plus" = { fg = "green" }
-"diff.delta" = { fg = "blue" }
-"diff.minus" = { fg = "red" }
+"diff.plus" = "green"
+"diff.delta" = "blue"
+"diff.minus" = "red"
 
 [palette]
 black = "#1a1a1a"
