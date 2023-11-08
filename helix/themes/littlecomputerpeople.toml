@@ -1,4 +1,8 @@
-# Author: Mikael Säker <mikael@sicher.org>
+# Little Computer People color theme for Helix
+#
+# Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text.  Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text.
+#
+# by Mikael Säker.
 
 "ui.background" = { bg = "white" }
 "ui.background.separator" = "gray"
@@ -27,16 +31,16 @@
 "ui.highlight" = { bg = "light-blue"}
 "ui.virtual.ruler" = { bg = "light-blue" }
 
-"special" = { fg = "blue", modifiers = ["bold"] }
-"warning" = { fg = "yellow", modifiers = ["bold"] }
 "error" = { fg = "red", modifiers = ["bold"] }
-"info" = { fg = "yellow", modifiers = ["bold"] }
-"hint" = { fg = "green", modifiers = ["bold"] }
+"warning" = { fg = "yellow", modifiers = ["bold"] }
+"info" = { modifiers = ["bold", "underlined"] }
+"special" = { modifiers = ["bold", "italic"] }
+"hint" = { modifiers = ["bold"] }
 
-"diagnostic.hint" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.error" = { fg = "red", underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
 "diagnostic.info" = { underline = { color = "yellow", style = "curl" } }
-"diagnostic.warning" = { underline = { color = "orange", style = "curl" } }
-"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "blue", style = "curl" } }
 
 "comment" = { fg = "red", modifiers = ["italic"] }
 "string" = { modifiers = ["italic"] }
@@ -48,9 +52,11 @@
 "markup.heading" = { fg = "black", modifiers = ["bold"] }
 "markup.heading.marker" = { fg = "red", modifiers = ["bold"] }
 "markup.list" = { fg = "red" }
+"markup.link" = { fg = "dark-blue" }
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic"] }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
+
 "diff.plus" = { fg = "green" }
 "diff.delta" = { fg = "blue" }
 "diff.minus" = { fg = "red" }
