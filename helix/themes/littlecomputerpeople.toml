@@ -1,6 +1,4 @@
-# Little Computer People color theme for Helix
-#
-# Created by Mikael Säker.
+# Author: Mikael Säker <mikael@sicher.org>
 
 "ui.background" = { bg = "white" }
 "ui.background.separator" = "gray"
