@@ -1,8 +1,6 @@
 # Little Computer People color theme for Helix
 #
-# Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text.  Here is a very long line of text. Here is a very long line of text. Here is a very long line of text. Here is a very long line of text.
-#
-# by Mikael Säker.
+# Created by Mikael Säker.
 
 "ui.background" = { bg = "white" }
 "ui.background.separator" = "gray"
