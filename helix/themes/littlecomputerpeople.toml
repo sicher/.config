@@ -6,14 +6,17 @@
 "ui.text.info" = "white"
 "ui.text.focus" = { bg = "light-gray" }
 "ui.statusline" = { fg = "dark-blue", bg = "light-gray" }
-"ui.statusline.normal" = { fg = "white", bg = "dark-blue" }
-"ui.statusline.insert" = { fg = "white", bg = "blue" } 
+"ui.statusline.normal" = { fg = "white", bg = "blue" }
+"ui.statusline.insert" = { fg = "white", bg = "dark-blue" } 
 "ui.statusline.select" = { fg = "black", bg = "yellow" }
 "ui.virtual" = "light-gray"
 "ui.window" = "gray"
 "ui.cursor" = { bg = "light-blue" }
-"ui.cursor.primary" = { bg = "blue" }
-"ui.cursor.insert" = { bg = "blue" }
+"ui.cursor.primary.normal" = { bg = "blue" }
+"ui.cursor.primary.insert" = { bg = "dark-blue", fg = "white" }
+"ui.cursor.primary.select" = { bg = "yellow" }
+"ui.cursor.insert" = { bg = "blue", fg = "white" }
+"ui.cursor.select" = { bg = "yellow" }
 "ui.cursor.match" = { bg = "light-gray", modifiers = ["bold"] }
 "ui.selection" = { bg = "light-yellow" }
 "ui.selection.primary" = { bg = "yellow" }
@@ -33,7 +36,7 @@
 "special" = { modifiers = ["bold", "italic"] }
 "hint" = { modifiers = ["bold"] }
 
-"diagnostic.error" = { fg = "red", underline = { color = "red", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
 "diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
 "diagnostic.info" = { underline = { color = "yellow", style = "curl" } }
 "diagnostic.hint" = { underline = { color = "blue", style = "curl" } }
@@ -73,5 +76,6 @@ light-gray = "#e5e5e5"
 
 dark-gray = "#757575"
 dark-blue = "#105e7e"
+dark-yellow = "#D6BE15"
 
 # end
