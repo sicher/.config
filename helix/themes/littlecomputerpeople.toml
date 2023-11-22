@@ -6,7 +6,7 @@
 "ui.text.info" = "white"
 "ui.text.focus" = { bg = "light-gray" }
 "ui.statusline" = { fg = "dark-blue", bg = "light-gray" }
-"ui.statusline.normal" = { fg = "white", bg = "blue" }
+"ui.statusline.normal" = { fg = "black", bg = "blue" }
 "ui.statusline.insert" = { fg = "white", bg = "dark-blue" } 
 "ui.statusline.select" = { fg = "black", bg = "yellow" }
 "ui.virtual" = "light-gray"
@@ -33,7 +33,7 @@
 "error" = { fg = "red", modifiers = ["bold"] }
 "warning" = { fg = "yellow", modifiers = ["bold"] }
 "info" = { modifiers = ["bold", "underlined"] }
-"special" = { modifiers = ["bold", "italic"] }
+"special" = { fg = "blue", modifiers = ["bold"] }
 "hint" = { modifiers = ["bold"] }
 
 "diagnostic.error" = { underline = { color = "red", style = "curl" } }
