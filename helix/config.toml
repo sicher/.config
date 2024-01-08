@@ -8,6 +8,7 @@ gutters = ["diff", "spacer", "diagnostics", "line-numbers", "spacer"]
 enable = false
 
 [editor.cursor-shape]
+insert = "bar"
 select = "underline"
 
 [keys.normal.space]

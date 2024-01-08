@@ -1,0 +1,9 @@
+# Author: Mikael Säker <mikael@sicher.org>
+
+inherits = "littlecomputerpeople"
+
+[palette]
+bg = "#1a1a1a"
+bg1 = "#29292e"
+bg2 = "#c5c5ca"
+fg = "#f7f7f7"

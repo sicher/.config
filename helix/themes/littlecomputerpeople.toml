@@ -1,39 +1,38 @@
 # Author: Mikael Säker <mikael@sicher.org>
 
-"ui.background" = { bg = "white" }
+"ui.background" = { bg = "bg" }
 "ui.background.separator" = "gray"
-"ui.text" = "black"
+"ui.text" = "fg"
 "ui.text.info" = "white"
-"ui.text.focus" = { bg = "light-gray" }
-"ui.statusline" = { fg = "dark-blue", bg = "light-gray" }
-"ui.statusline.normal" = { fg = "black", bg = "blue" }
-"ui.statusline.insert" = { fg = "white", bg = "dark-blue" } 
+"ui.text.focus" = { fg = "white", bg = "dark-blue" }
+"ui.statusline" = { fg = "bg2", bg = "bg1" }
+"ui.statusline.normal" = { fg = "white", bg = "dark-blue" }
+"ui.statusline.insert" = { fg = "black", bg = "blue" } 
 "ui.statusline.select" = { fg = "black", bg = "yellow" }
 "ui.virtual" = "light-gray"
 "ui.window" = "gray"
-"ui.cursor" = { bg = "light-blue" }
-"ui.cursor.primary.normal" = { bg = "blue" }
-"ui.cursor.primary.insert" = { bg = "dark-blue", fg = "white" }
-"ui.cursor.primary.select" = { bg = "yellow" }
-"ui.cursor.insert" = { bg = "blue", fg = "white" }
-"ui.cursor.select" = { bg = "yellow" }
-"ui.cursor.match" = { bg = "light-gray", modifiers = ["bold"] }
-"ui.selection" = { bg = "light-yellow" }
-"ui.selection.primary" = { bg = "yellow" }
-"ui.menu" = { fg = "black", bg = "light-gray" }
+"ui.menu" = { fg = "fg", bg = "bg1" }
 "ui.menu.selected" = { fg = "white", bg = "dark-blue" }
-"ui.popup" = { fg = "black", bg = "light-gray" }
-"ui.popup.info" = { fg = "gray", bg = "dark-blue" }
+"ui.popup" = { fg = "fg", bg = "bg1" }
+"ui.popup.info" = { fg = "white", bg = "dark-blue" }
 "ui.help" = { fg = "white", bg = "dark-blue" }
-"ui.linenr" = "light-gray"
-"ui.linenr.selected" = "dark-gray"
-"ui.highlight" = { bg = "light-blue"}
-"ui.virtual.ruler" = { bg = "light-blue" }
+"ui.linenr" = "bg1"
+"ui.linenr.selected" = "bg2"
+"ui.highlight" = { bg = "bg1" }
+"ui.virtual.ruler" = { bg = "bg1" }
+"ui.cursor" = { bg = "light-blue", fg = "black" }
+"ui.cursor.primary.normal" = { bg = "blue", fg = "black" }
+"ui.cursor.primary.insert" = { bg = "blue", fg = "black" }
+"ui.cursor.primary.select" = { bg = "yellow" }
+"ui.cursor.insert" = { bg = "blue", fg = "black" }
+"ui.cursor.select" = { bg = "yellow", fg = "black" }
+"ui.cursor.match" = { bg = "bg1", fg = "fg", modifiers = ["bold"] }
+"ui.selection" = { bg = "light-yellow", fg = "black" }
+"ui.selection.primary" = { bg = "yellow", fg = "black" }
 
 "error" = { fg = "red", modifiers = ["bold"] }
 "warning" = { fg = "yellow", modifiers = ["bold"] }
 "info" = { modifiers = ["bold", "underlined"] }
-"special" = { fg = "blue", modifiers = ["bold"] }
 "hint" = { modifiers = ["bold"] }
 
 "diagnostic.error" = { underline = { color = "red", style = "curl" } }
@@ -44,13 +43,11 @@
 "comment" = { fg = "red", modifiers = ["italic"] }
 "string" = { modifiers = ["italic"] }
 "keyword" = { modifiers = ["bold"] }
-"type" = { modifiers = ["italic"] }
-"tag" = "red"
+"tag" = { modifiers = ["bold"] }
 
-"markup.heading" = { fg = "black", modifiers = ["bold"] }
+"markup.heading" = { modifiers = ["bold"] }
 "markup.heading.marker" = { fg = "red", modifiers = ["bold"] }
-"markup.list" = "red"
-"markup.link" = "dark-blue"
+"markup.link" = { modifiers = ["italic"] }
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic"] }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
@@ -60,10 +57,15 @@
 "diff.minus" = "red"
 
 [palette]
+fg = "#1a1a1a"
+bg = "#f7f7f7"
+bg1 = "#e5e5e5"
+bg2 = "#757575"
+
 black = "#1a1a1a"
 white = "#f7f7f7"
 
-red = "#f02020"
+red = "#f03037"
 green = "#20bb20"
 yellow = "#F6DE35"
 blue = "#20bbfc"
