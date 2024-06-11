@@ -5,20 +5,22 @@
 "ui.text" = "fg"
 "ui.text.info" = "white"
 "ui.text.focus" = { fg = "white", bg = "dark-blue" }
-"ui.statusline" = { fg = "bg2", bg = "bg1" }
+"ui.statusline" = { fg = "white", bg = "dark-blue" }
 "ui.statusline.normal" = { fg = "white", bg = "dark-blue" }
 "ui.statusline.insert" = { fg = "black", bg = "blue" } 
 "ui.statusline.select" = { fg = "black", bg = "yellow" }
 "ui.virtual" = "light-gray"
-"ui.window" = "gray"
-"ui.menu" = { fg = "fg", bg = "bg1" }
-"ui.menu.selected" = { fg = "white", bg = "dark-blue" }
+"ui.window" = "dark-blue"
+"ui.menu" = { fg = "white", bg = "dark-blue" }
+"ui.menu.selected" = { fg = "fg", bg = "bg1" }
+"ui.menu.scroll" = { fg = "black", bg = "bg2" }
 "ui.popup" = { fg = "fg", bg = "bg1" }
 "ui.popup.info" = { fg = "white", bg = "dark-blue" }
-"ui.help" = { fg = "white", bg = "dark-blue" }
+"ui.help" = { fg = "fg", bg = "bg1" }
 "ui.linenr" = "bg1"
 "ui.linenr.selected" = "bg2"
 "ui.highlight" = { bg = "bg1" }
+"ui.virtual.jump-label" = { fg = "fg", bg = "bg1" }
 "ui.virtual.ruler" = { bg = "bg1" }
 "ui.cursor" = { bg = "light-blue", fg = "black" }
 "ui.cursor.primary.normal" = { bg = "blue", fg = "black" }
@@ -29,6 +31,7 @@
 "ui.cursor.match" = { bg = "bg1", fg = "fg", modifiers = ["bold"] }
 "ui.selection" = { bg = "light-yellow", fg = "black" }
 "ui.selection.primary" = { bg = "yellow", fg = "black" }
+"special" = { fg = "red", modifiers = ["bold"] }
 
 "error" = { fg = "red", modifiers = ["bold"] }
 "warning" = { fg = "yellow", modifiers = ["bold"] }
@@ -47,7 +50,7 @@
 
 "markup.heading" = { modifiers = ["bold"] }
 "markup.heading.marker" = { fg = "red", modifiers = ["bold"] }
-"markup.link" = { modifiers = ["italic"] }
+"markup.link" = { fg = "red", modifiers = ["italic"] }
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic"] }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
@@ -65,14 +68,14 @@ bg2 = "#757575"
 black = "#1a1a1a"
 white = "#f7f7f7"
 
-red = "#f03037"
+red = "#f02020"
 green = "#20bb20"
-yellow = "#F6DE35"
+yellow = "#F6EE45"
 blue = "#20bbfc"
 gray = "#d5d5d5"
 
 light-green = "#8FDD8f"
-light-yellow = "#F7F768"
+light-yellow = "#F7F798"
 light-blue = "#a6e4fe"
 light-gray = "#e5e5e5"
 

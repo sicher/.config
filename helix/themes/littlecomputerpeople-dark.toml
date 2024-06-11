@@ -4,6 +4,7 @@ inherits = "littlecomputerpeople"
 
 [palette]
 bg = "#1a1a1a"
-bg1 = "#29292e"
+bg1 = "#49494e"
 bg2 = "#c5c5ca"
 fg = "#f7f7f7"
+red = "#e05e48"
