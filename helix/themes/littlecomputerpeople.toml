@@ -11,25 +11,25 @@
 "ui.statusline.select" = { fg = "black", bg = "yellow" }
 "ui.virtual" = "light-gray"
 "ui.window" = "dark-blue"
-"ui.menu" = { fg = "white", bg = "dark-blue" }
-"ui.menu.selected" = { fg = "fg", bg = "bg1" }
+"ui.menu" = { fg = "fg", bg = "lowc" }
+"ui.menu.selected" = { fg = "white", bg = "dark-blue" }
 "ui.menu.scroll" = { fg = "black", bg = "bg2" }
-"ui.popup" = { fg = "fg", bg = "bg1" }
+"ui.popup" = { fg = "fg", bg = "lowc" }
 "ui.popup.info" = { fg = "white", bg = "dark-blue" }
-"ui.help" = { fg = "fg", bg = "bg1" }
-"ui.linenr" = "bg1"
-"ui.linenr.selected" = "bg2"
-"ui.highlight" = { bg = "bg1" }
-"ui.virtual.jump-label" = { fg = "fg", bg = "bg1" }
-"ui.virtual.ruler" = { bg = "bg1" }
-"ui.cursor" = { bg = "light-blue", fg = "black" }
+"ui.help" = { fg = "white", bg = "dark-blue" }
+"ui.linenr" = "lowc"
+"ui.linenr.selected" = "highc"
+"ui.highlight" = { bg = "lowc" }
+"ui.virtual.jump-label" = { fg = "fg", bg = "lowc" }
+"ui.virtual.ruler" = { bg = "lowc" }
+"ui.cursor" = { bg = "bluegray", fg = "black" }
 "ui.cursor.primary.normal" = { bg = "blue", fg = "black" }
 "ui.cursor.primary.insert" = { bg = "blue", fg = "black" }
 "ui.cursor.primary.select" = { bg = "yellow" }
 "ui.cursor.insert" = { bg = "blue", fg = "black" }
 "ui.cursor.select" = { bg = "yellow", fg = "black" }
-"ui.cursor.match" = { bg = "bg1", fg = "fg", modifiers = ["bold"] }
-"ui.selection" = { bg = "light-yellow", fg = "black" }
+"ui.cursor.match" = { fg = "blue", modifiers = ["bold"] }
+"ui.selection" = { bg = "lowc", fg = "fg" }
 "ui.selection.primary" = { bg = "yellow", fg = "black" }
 "special" = { fg = "red", modifiers = ["bold"] }
 
@@ -62,8 +62,8 @@
 [palette]
 fg = "#1a1a1a"
 bg = "#f7f7f7"
-bg1 = "#e5e5e5"
-bg2 = "#757575"
+lowc = "#e5e5e5"
+highc = "#757575"
 
 black = "#1a1a1a"
 white = "#f7f7f7"
@@ -72,15 +72,12 @@ red = "#f02020"
 green = "#20bb20"
 yellow = "#F6EE45"
 blue = "#20bbfc"
-gray = "#d5d5d5"
+gray = "#d5d9db"
+bluegray = "#B6D4E3"
 
-light-green = "#8FDD8f"
-light-yellow = "#F7F798"
-light-blue = "#a6e4fe"
+light-blue = "#a2e3fe"
 light-gray = "#e5e5e5"
 
 dark-gray = "#757575"
 dark-blue = "#105e7e"
-dark-yellow = "#D6BE15"
-
 # end
