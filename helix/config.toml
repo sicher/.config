@@ -22,3 +22,27 @@ z = ":toggle gutters.line-numbers.min-width 3 31"
 
 [keys.normal.g]
 "ret" = "goto_line_end_newline"
+# "m" = "match_brackets"
+
+[keys.normal.m]
+# Can't use s, r, d, a, i
+"S" = "split_selection_on_newline"
+"minus" = "merge_selections"
+"_" = "merge_consecutive_selections"
+";" = "flip_selections"
+":" = "ensure_selections_forward"
+"," = "remove_primary_selection"
+"C" = "copy_selection_on_prev_line"
+"(" = "rotate_selection_contents_backward"
+")" = "rotate_selection_contents_forward"
+"x" = "shrink_to_line_bounds"
+"J" = "join_selections_space"
+"K" = "remove_selections"
+#"o" = "expand_selection"
+"up" = "expand_selection"
+#"i" = "shrink_selection"
+"down" = "shrink_selection"
+"p" = "select_prev_sibling"
+"left" = "select_prev_sibling"
+"n" = "select_next_sibling"
+"right" = "select_next_sibling"
