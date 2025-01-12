@@ -1,6 +1,6 @@
 # Author: Mikael Säker <mikael@sicher.org>
 
-"ui.background" = { bg = "bg" }
+"ui.background" = { fg = "gray", bg = "bg" }
 "ui.background.separator" = "gray"
 "ui.text" = "fg"
 "ui.text.info" = "white"
@@ -31,12 +31,14 @@
 "ui.cursor.match" = { fg = "blue", modifiers = ["bold"] }
 "ui.selection" = { bg = "lowc", fg = "fg" }
 "ui.selection.primary" = { bg = "yellow", fg = "black" }
-"special" = { fg = "red", modifiers = ["bold"] }
+"ui.picker.header.column" = { modifiers = ["bold"], underline = { style = "line" } } 
 
 "error" = { fg = "red", modifiers = ["bold"] }
 "warning" = { fg = "yellow", modifiers = ["bold"] }
 "info" = { modifiers = ["bold", "underlined"] }
 "hint" = { modifiers = ["bold"] }
+
+"special" = { fg = "red", modifiers = ["bold"] }
 
 "diagnostic.error" = { underline = { color = "red", style = "curl" } }
 "diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
